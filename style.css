@@ -1,0 +1,248 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+html{
+    /* 10px/rem */    
+    font-size: 10px;    
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    font-family: 'PingFangSC-Regular','Helvetica','STHeiti STXihei','Microsoft JhengHei','Microsoft YaHei,Arial';
+}
+.block-center{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.container{
+    width: 100%;
+    height: 100%;
+}
+.page{
+    width: 100%;
+    height: 100%;
+    background-image: url(./images/avartar/red/bg.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 120% auto;
+    position: relative;
+    overflow: hidden;
+}
+.page div{
+    position: absolute;
+    overflow: hidden;
+}
+.page div img{
+    width: 100%;
+}
+.logo{
+    width: 6rem;
+    height: 6rem;
+    right: 1rem;
+    top: .8rem;
+}
+
+/* page_1 */
+.text-1{
+    max-width: 30rem;
+    width: calc(100% - 5.5rem);
+    top: 5rem;
+    z-index: 1;
+}
+.katong{
+    max-width: 28.5rem;
+    width: calc(100% - 7.5rem);
+    bottom: 6.7rem;
+    transform: translateX(-48%);
+    z-index: 0;
+}
+.text-2{
+    max-width: 23.2rem;
+    width: calc(100% - 9rem);
+    bottom: 8.5rem;
+    z-index:4;
+}
+.foot-bg{
+    width: 100%;
+    height: 19.2rem;
+    left: 0;
+    bottom: 0;
+    z-index: 3;
+}
+.foot-bg img{
+    height: 19.2rem;
+}
+.input-btn{
+    max-width: 17.7rem;
+    bottom: 2.4rem;
+    z-index: 4;
+    pointer-events: none;
+}
+
+/* page_2 */
+.percent15-top{
+    top:15%;
+}
+
+.touxiang-box{
+    width: 12.9rem;
+    height: 12.9rem;
+    border-radius: 50%;
+    bottom: 20rem;
+    z-index: 4;
+    border: solid 0.2rem #e51a4a;
+    box-shadow: 0rem 0.2rem 1.7rem 0.8rem rgba(1, 1, 1, 0.46);
+    overflow: hidden;
+}
+.square-box{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.square-box img{
+    width: 100%;
+    display: block;
+    position: absolute;
+}
+
+.decoration-img{
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.user-img{
+    height: auto;
+}
+.foot-bg-2{
+    width: 100%;
+    height: 34.8rem;
+    bottom: 0;
+}
+.foot-bg-2 img{
+    width: 100%;
+    height: 100%;
+}
+.text-3{
+    width: 18rem;
+    bottom: 14.7rem;
+    z-index: 4;
+}
+.bottom-p{
+    position: absolute;
+    bottom: 12.9rem;
+    text-align: center;
+    font-size: 1.2rem;
+    z-index: 4;
+    color: #fff;
+}
+.change-btn{
+    /* span不换行 */
+    white-space: nowrap;
+    bottom: 9.2rem;
+    z-index: 4;
+}
+.change-btn span{
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+    border: solid 0.2rem #ffffff;
+    display: inline-block;
+    margin: 0 .5rem;
+}
+.change-btn span:nth-child(1){
+    background-color: #00b6ee;
+}
+.change-btn span:nth-child(2){
+    background-color: #91c720;
+}
+.change-btn span:nth-child(3){
+    background-color: #e7622f;
+}
+.copyright{
+    bottom: 1.9rem;
+    z-index: 4;
+}
+.copyright p{
+    white-space: nowrap;    
+    font-size: 0.8rem;
+    color: #303030;
+}
+
+.display-none{
+    display: none;
+}
+
+.vision-disable{
+    opacity: 0;
+    max-width: 17.7rem;
+    bottom: 2.4rem;
+    z-index: 4;
+}
+.vision-disable::before{
+    content: '';
+    width: 120%;
+    height: 250%;
+    background-color:white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.show-img{
+    width:100%;
+    position: absolute;
+    bottom: 27%;
+    left: 0;
+    right: 0;
+    animation: fade-out .3s ease-out 0s 1 forwards;
+}
+@keyframes fade-out{
+    from{
+        transform: scale(1);
+        opacity: .5;
+    }
+    to{
+        transform: scale(.7);
+        opacity: 1;
+    }
+}
+
+/* page-3 */
+#page-3{
+    background: rgba(40, 40, 40, .96);
+    background-image: none;
+    z-index: 999;
+    transform: translateY(-100%);
+}
+.share{
+    width: 15.9rem;
+    top: .4rem;
+    right: .8rem;
+}
+.text-4{
+    width: 17.9rem;
+    bottom: 25%;
+}
+.page3-bottom{
+    white-space: nowrap;
+    text-align: center;
+    bottom: 2.1rem;
+}
+.ad-line{
+    display: inline-block;
+    width: 100%;
+	height: 0.4rem;
+}
